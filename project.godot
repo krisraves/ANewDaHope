@@ -1,0 +1,43 @@
+; Da'Herm Wars Episode X: A New Da'Hope
+; MILESTONE 15 - RELEASE CANDIDATE
+; Engine: Godot 4.x (tested against 4.2/4.3 APIs)
+
+config_version=5
+
+[application]
+
+config/name="Da'Herm Wars EpX - 1.0.0-rc1"
+run/main_scene="res://scenes/levels/title_screen.tscn"
+config/version="1.0.0-rc1"
+config/features=PackedStringArray("4.3")
+
+[autoload]
+
+InputSetup="*res://scripts/systems/input_setup.gd"
+GameState="*res://scripts/systems/game_state.gd"
+WeaponDB="*res://scripts/systems/weapon_db.gd"
+QuestDB="*res://scripts/systems/quest_db.gd"
+SaveSystem="*res://scripts/systems/save_system.gd"
+Juice="*res://scripts/systems/juice.gd"
+DialogueSystem="*res://scripts/systems/dialogue_system.gd"
+PauseMenu="*res://scripts/ui/pause_menu.gd"
+Achievements="*res://scripts/systems/achievements.gd"
+Settings="*res://scripts/systems/settings.gd"
+DebugMenu="*res://scripts/systems/debug_menu.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[physics]
+
+common/physics_ticks_per_second=120
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
